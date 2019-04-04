@@ -34,7 +34,7 @@ namespace MedicineAccountingAPI
 
             string connection = Configuration.GetConnectionString("DefaultConnection");
 
-            // добавляем контекст MobileContext в качестве сервиса в приложение
+            // добавляем контекст Context в качестве сервиса в приложение
             services.AddDbContext<ContextMedicineAccounting>(options =>
                 options.UseSqlServer(connection));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

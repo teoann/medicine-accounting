@@ -11,7 +11,7 @@ namespace MedicineAccountingAPI
 {
     public class Connection
     {
-        public DbContextOptions<ContextMedicineAccounting> ConnectionOption()
+        public static DbContextOptions<ContextMedicineAccounting> ConnectionOption()
         {
             var builder = new ConfigurationBuilder();
             // установка пути к текущему каталогу
