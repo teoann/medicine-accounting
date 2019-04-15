@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
 import { } from 'rxjs';
+import { ProductService } from './product.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { } from 'rxjs';
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

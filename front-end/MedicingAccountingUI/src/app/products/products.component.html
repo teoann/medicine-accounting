@@ -1,8 +1,12 @@
-<form [formGroup] = "addingProductForm" (ngSubmit)="submit()" novalidate >
+<form [formGroup] = "addingProductForm" novalidate >
   <div class ="container">
     <label>Product Name</label>
   <div class ="form-group">  
-    <input class="form-control" name="name" formControlName="productName" placeholder="Set the product name"/>
+    <input #productNameEl 
+            class="form-control"
+            name="name" 
+            formControlName="productName" 
+            placeholder="Set the product name"/>
     <div class="alert alert-warning" 
       *ngIf = "addingProductForm.controls['productName'].invalid && addingProductForm.controls['productName'].touched">
       Product name isn't valid
@@ -10,7 +14,11 @@
   </div>
   <label>Amount</label>
   <div class ="form-group">
-    <input class="form-control" name="amount" formControlName="productAmount" placeholder="0"/>
+    <input #productAmountEl
+            class="form-control"
+            name="amount"
+            formControlName="productAmount"
+            placeholder="0"/>
     <div class="alert alert-warning" 
       *ngIf = "addingProductForm.controls['productAmount'].invalid && addingProductForm.controls['productAmount'].touched">
       Product amount isn't valid
@@ -18,17 +26,46 @@
   </div>
   <label>Price</label>
   <div class ="form-group">
-    <input class="form-control" name="price" formControlName="productPrice" placeholder="0.0"/>
+    <input #productPriceEl
+          class="form-control"
+          name="price" 
+          formControlName="productPrice" 
+          placeholder="0.0"/>
     <div class="alert alert-warning" 
       *ngIf = "addingProductForm.controls['productPrice'].invalid && addingProductForm.controls['productPrice'].touched">
      Product price isn't valid 
     </div>
   </div>
   <div class ="form-group">
-    <button type="submit" class="btn btn-default" 
-      [disabled] = "addingProductForm.invalid">
+    <button type="submit" 
+            class="btn btn-submit" 
+            [disabled] = "addingProductForm.invalid"
+            (click)="addProduct(productNameEl.value, productAmountEl.value, productPriceEl.value);
+            productNameEl.value='';
+            productAmountEl.value='';
+            productPriceEl.value='';">
       Add
     </button>
   </div>
   </div>
+  <table>
+    <thead class="t-head">
+      <tr>
+        <th>Product Name</th>
+        <th>Product Amount</th>
+        <th>Product Price</th>
+        <th>Total Sum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{product.name}}</td>
+        <td>{{product.amount}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.price * product.amount || 0}}</td>
+        <td><button (click)="removeProduct(product.name)"                    class="btn btn-delete">x</button></td>
+        <td><button class="btn fas fa-pencil-alt"></button></td>
+      </tr>
+    </tbody>
+  </table>
 </form>
