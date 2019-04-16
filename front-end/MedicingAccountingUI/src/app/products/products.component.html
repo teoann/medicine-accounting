@@ -58,14 +58,17 @@
       </tr>
     </thead>
     <tbody>
+      
       <tr *ngFor="let product of products">
         <td>{{product.name}}</td>
         <td>{{product.amount}}</td>
         <td>{{product.price}}</td>
         <td>{{product.price * product.amount || 0}}</td>
-        <td><button (click)="removeProduct(product.name)"                    class="btn btn-delete">x</button></td>
+        <td><button (click)="removeProduct(product.id)"
+                     class="btn btn-delete">x</button></td>
         <td><button class="btn fas fa-pencil-alt"></button></td>
       </tr>
+      
     </tbody>
   </table>
 </form>

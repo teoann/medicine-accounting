@@ -14,3 +14,10 @@ F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\M
 F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\obj\Debug\netcoreapp2.1\MedicineAccountingAPI.dll
 F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\obj\Debug\netcoreapp2.1\MedicineAccountingAPI.pdb
 F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\obj\Debug\netcoreapp2.1\MedicineAccountingAPI.csproj.CopyComplete
+F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\bin\Debug\netcoreapp2.1\MedicineAccountingAPI.Views.pdb
+F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\obj\Debug\netcoreapp2.1\MedicineAccountingAPI.TagHelpers.input.cache
+F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\obj\Debug\netcoreapp2.1\MedicineAccountingAPI.TagHelpers.output.cache
+F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\obj\Debug\netcoreapp2.1\MedicineAccountingAPI.RazorCoreGenerate.cache
+F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\obj\Debug\netcoreapp2.1\MedicineAccountingAPI.RazorTargetAssemblyInfo.cs
+F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\obj\Debug\netcoreapp2.1\MedicineAccountingAPI.Views.pdb

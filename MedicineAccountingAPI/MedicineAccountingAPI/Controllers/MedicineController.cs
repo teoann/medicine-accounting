@@ -85,7 +85,7 @@ namespace MedicineAccountingAPI.Controllers
         }
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public bool Delete(int id)
+        public List<Product> Delete(int id)
         {
             using (_context = new ContextMedicineAccounting(Connection.ConnectionOption()))
             {
@@ -96,18 +96,16 @@ namespace MedicineAccountingAPI.Controllers
                     {
                         _context.Products.Remove(prod);
                         _context.SaveChanges();
-                        return true;
+                        return /*Ok(*/_context.Products.ToList();
                     }
                     else
                     {
-                        NotFound();
-                        return false;
+                        return null;//NotFound("Doesn't exist product with the same id");
                     }
                 }
                 else
                 {
-                    BadRequest();
-                    return false;
+                    return null;//BadRequest();
                 }
             }
         }
