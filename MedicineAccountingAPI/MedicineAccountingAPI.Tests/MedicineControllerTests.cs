@@ -136,7 +136,7 @@ namespace MedicineAccountingAPI.Tests
             //act
             var result = mc.Delete(id);
             //assert
-            Assert.True(result);
+            Assert.True(result is List<Product>);
         }
         [Theory]
         [InlineData(0)]
@@ -147,7 +147,7 @@ namespace MedicineAccountingAPI.Tests
             //act
             var result = mc.Delete(id);
             //assert
-            Assert.False(result);
+            Assert.False(result is List<Product>);
         }
     }
     

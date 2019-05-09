@@ -16,3 +16,5 @@ F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\M
 F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI.Tests\obj\Debug\netcoreapp2.1\MedicineAccountingAPI.Tests.dll
 F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI.Tests\obj\Debug\netcoreapp2.1\MedicineAccountingAPI.Tests.pdb
 F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI.Tests\bin\Debug\netcoreapp2.1\appsettings.json
+F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI.Tests\bin\Debug\netcoreapp2.1\MedicineAccountingAPI.Views.dll
+F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI.Tests\bin\Debug\netcoreapp2.1\MedicineAccountingAPI.Views.pdb

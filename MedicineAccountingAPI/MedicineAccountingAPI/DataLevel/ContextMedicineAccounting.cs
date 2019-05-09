@@ -13,6 +13,7 @@ namespace MedicineAccountingAPI.DataLevel
             Database.EnsureCreated();
         }
         public DbSet<Product> Products { get; set; }
+        public DbSet<User> Users { get; set;}
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Product>().HasData(
@@ -21,6 +22,12 @@ namespace MedicineAccountingAPI.DataLevel
                     new Product { Id=1, Name="Citramon", Amount = 20, Price =10},
                     new Product { Id=2, Name="Nimessil", Amount = 50, Price =11.50},
                     new Product { Id=3, Name="Nurofen", Amount = 20, Price = 50}
+                });
+            modelBuilder.Entity<User>().HasData(
+                new User[]
+                {
+                    new User { Id=1, Name="Peri", Login="admin", Password="admin", Email="admin@gmail.com"},
+                    new User { Id=2, Name="Merri", Login="bookkeeper", Password="bookkeeper", Email="bk@gmail.com"}
                 });
             base.OnModelCreating(modelBuilder);
         }

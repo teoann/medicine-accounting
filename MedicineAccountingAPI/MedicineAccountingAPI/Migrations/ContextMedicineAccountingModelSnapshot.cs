@@ -40,6 +40,34 @@ namespace MedicineAccountingAPI.Migrations
                         new { Id = 3, Amount = 20, Name = "Nurofen", Price = 50.0 }
                     );
                 });
+
+            modelBuilder.Entity("MedicineAccountingAPI.DataLevel.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Email")
+                        .IsRequired();
+
+                    b.Property<string>("Login")
+                        .IsRequired();
+
+                    b.Property<string>("Name")
+                        .IsRequired();
+
+                    b.Property<string>("Password")
+                        .IsRequired();
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+
+                    b.HasData(
+                        new { Id = 1, Email = "admin@gmail.com", Login = "admin", Name = "Peri", Password = "admin" },
+                        new { Id = 2, Email = "bk@gmail.com", Login = "bookkeeper", Name = "Merri", Password = "bookkeeper" }
+                    );
+                });
 #pragma warning restore 612, 618
         }
     }

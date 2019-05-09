@@ -2,7 +2,6 @@ F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\M
 F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\bin\Debug\netcoreapp2.1\MedicineAccountingAPI.runtimeconfig.json
 F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\bin\Debug\netcoreapp2.1\MedicineAccountingAPI.runtimeconfig.dev.json
 F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\bin\Debug\netcoreapp2.1\MedicineAccountingAPI.dll
-F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\obj\Debug\netcoreapp2.1\MedicineAccountingAPI.csprojAssemblyReference.cache
 F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\obj\Debug\netcoreapp2.1\MedicineAccountingAPI.csproj.CoreCompileInputs.cache
 F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\obj\Debug\netcoreapp2.1\MedicineAccountingAPI.RazorAssemblyInfo.cache
 F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\obj\Debug\netcoreapp2.1\MedicineAccountingAPI.RazorAssemblyInfo.cs
@@ -21,3 +20,4 @@ F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\M
 F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\obj\Debug\netcoreapp2.1\MedicineAccountingAPI.RazorTargetAssemblyInfo.cs
 F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\obj\Debug\netcoreapp2.1\MedicineAccountingAPI.Views.pdb
+F:\Programming\Practice\JobPreparing\medicine-accounting\MedicineAccountingAPI\MedicineAccountingAPI\obj\Debug\netcoreapp2.1\MedicineAccountingAPI.csprojAssemblyReference.cache
