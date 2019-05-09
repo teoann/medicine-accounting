@@ -1,0 +1,14 @@
+<header>
+<ul>
+  <li>
+    <a routerLink="products" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Products</a>
+  </li>
+  <li>
+    <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Login</a>
+  </li>
+
+</ul>
+</header>
+
+<router-outlet (ng-Model)="user"></router-outlet>
+

@@ -1,0 +1,12 @@
+<p *ngIf ="_name">{{_name}}</p>
+<form class="form-group">
+  <div class ="container" *ngIf ="_visible">
+    <label for="loginTextbox">Login</label>
+    <input type="text" id="loginTextbox" name="login" [(ngModel)]="login" placeholder="Login"/>
+    <label for="passwordTextBox">Password</label>
+    <input type="password" id ="passwordTextbox" name="password" [(ngModel)]="password" placeholder="Password"/>
+    <button class="btn btn-submit" (click)="Authorization(login, password)">Enter</button>
+    <button class="btn btn-register">Register</button>
+  </div>
+</form>
+
