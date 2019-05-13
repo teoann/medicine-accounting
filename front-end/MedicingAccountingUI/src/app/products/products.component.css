@@ -19,15 +19,7 @@
   height: 30px;
   margin-left: -15px;
 }
-.ng-touched .ng-invalid {
-  border:solid rgb(182, 3, 113) 2px;
-}
-.alert-warning{
-  color:  rgb(182, 3, 113);
-}
-.ng-touched .ng-valid {
-  border: solid green 2px;
-}
+
 table{
   border-spacing: 20px;
 }
@@ -43,12 +35,7 @@ table{
   color: navy;
   border: 0;
 }
-.btn:active {
-  color: rgb(114, 114, 211);
-}
-.btn:disabled {
-  color: rgb(114, 114, 211);
-}
+
 .btn-delete {
   color:mediumvioletred;
   padding-bottom: 20px;

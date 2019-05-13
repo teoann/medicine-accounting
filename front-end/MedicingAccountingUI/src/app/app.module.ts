@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { UserService } from './user.service';
 import { from } from 'rxjs';
+import { CheckAuthorizationGuard } from './check-authorization.guard';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { from } from 'rxjs';
     FormsModule,
     HttpClientModule
   ],
-  providers: [ProductService, UserService],
+  providers: [ProductService, UserService, CheckAuthorizationGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

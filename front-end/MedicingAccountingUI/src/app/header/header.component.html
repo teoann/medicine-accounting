@@ -1,14 +1,18 @@
 <header>
 <ul>
   <li>
-    <a routerLink="products" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Products</a>
+    <a routerLink="products" routerLinkActive="active"
+     [routerLinkActiveOptions]="{exact:true}">Products</a>
   </li>
-  <li>
-    <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Login</a>
+  <li class="enter">
+    <a *ngIf="userName==='undefined'" 
+        routerLink="" 
+        routerLinkActive="active" 
+        [routerLinkActiveOptions]="{exact:true}">Login</a>
+    <p *ngIf ="userName"> Welcome, {{userName}}!</p>
   </li>
-
 </ul>
 </header>
 
-<router-outlet (ng-Model)="user"></router-outlet>
+<router-outlet></router-outlet>
 

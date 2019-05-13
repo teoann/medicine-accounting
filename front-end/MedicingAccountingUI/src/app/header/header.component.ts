@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import {UserService} from '../user.service'
 
 @Component({
   selector: 'app-header',
@@ -7,13 +8,15 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Input() user;
-  
-  constructor() {
-   }
+  public userName: string  = 'undefined';
+
+  constructor(private US: UserService) {}
 
   ngOnInit() {
-   if(this.user!=undefined) console.log(this.user);
+    this.US.subscribeNotification('header', 
+      ()=>this.US.currentName.subscribe(us=> this.userName =us));
+    console.log(this.userName);
   }
-
+   
 }
+

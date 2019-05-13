@@ -1,5 +1,6 @@
 *{
   font: white;
+  color: white;
   border-radius: 0px;
 }
 ul {
@@ -10,12 +11,19 @@ ul {
   overflow: hidden;
   background-color: #333;
 }
+.enter {
+  float:right;
+}
 
 li {
   float: left;
 }
-
-li a {
+li p{
+  display: block;
+  text-align: center;
+  margin-right: 10px;
+}
+li a{
   display: block;
   color: white;
   text-align: center;

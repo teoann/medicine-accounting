@@ -1,4 +1,5 @@
-<form [formGroup] = "addingProductForm" novalidate >
+<form [formGroup] = "addingProductForm"
+      novalidate >
   <div class ="container">
     <label>Product Name</label>
   <div class ="form-group">  
@@ -8,7 +9,8 @@
             formControlName="productName" 
             placeholder="Set the product name"/>
     <div class="alert alert-warning" 
-      *ngIf = "addingProductForm.controls['productName'].invalid && addingProductForm.controls['productName'].touched">
+      *ngIf = "addingProductForm.controls['productName'].invalid &&
+               addingProductForm.controls['productName'].touched">
       Product name isn't valid
     </div>
   </div>
